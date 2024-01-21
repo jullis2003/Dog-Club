@@ -1,0 +1,104 @@
+.nutrition-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--color-primary-light);
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 24px 16px;
+    height: 512px;
+
+    &:hover {
+      box-shadow: 0px 8px 16px 0px rgba(24, 24, 23, 0.08);
+    }
+  }
+
+  &__image {
+    width: 88px;
+    height: 162px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 138px;
+      height: 260px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      align-items: center;
+      flex-direction: row;
+      gap: 16px;
+      margin-top: 22px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__code {
+    color: var(--color-secondary-dark);
+    font-size: 12px;
+    line-height: 1.1;
+    margin-bottom: 0;
+    font-weight: 300;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-weight: 400;
+    }
+  }
+
+  &__grade {
+  }
+
+  &__grade-star {
+    fill: var(--color-secondary-dark);
+
+    &--filled {
+      fill: var(--color-secondary-brand);
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__price {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__new-price,
+  &__old-price {
+    margin-bottom: 0;
+  }
+
+  &__new-price {
+    font-weight: 500;
+  }
+
+  &__old-price {
+    color: var(--color-secondary-dark);
+    font-size: 12px;
+    line-height: 1.1;
+    text-decoration-line: line-through;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 14px;
+    }
+  }
+
+  &__button {
+  }
+}

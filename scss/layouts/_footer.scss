@@ -1,0 +1,180 @@
+.footer {
+  position: relative;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-bottom: 50px;
+  }
+
+  &::after {
+    content: '';
+    width: 139px;
+    height: 145px;
+    background-image: url('/images/index/footer-dog.png');
+    background-size: cover;
+    position: absolute;
+    top: -120px;
+    right: 35%;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 292px;
+      height: 305px;
+      top: -10px;
+      right: 80px;
+    }
+  }
+
+  &__container {
+    background-color: var(--color-secondary-light);
+    padding-top: 14px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 32px 0;
+    }
+  }
+
+  &__content,
+  &__nav {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 20px;
+      flex-direction: row;
+    }
+  }
+
+  &__nav {
+    align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      align-items: flex-start;
+    }
+  }
+
+  &__nav,
+  &__form {
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: 50%;
+    }
+  }
+
+  &__links,
+  &__menu {
+    @media screen and (min-width: $bp-tablet) {
+      flex-grow: 1;
+    }
+  }
+
+  &__socials {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-top: 24px;
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  &__social {
+    fill: var(--color-primary-normal);
+  }
+
+  &__menu {
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &__mobile-socials {
+    display: flex;
+    gap: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__form-field {
+    margin-bottom: 16px;
+  }
+
+  &__form-label {
+    position: absolute;
+    top: 5px;
+    left: 24px;
+  }
+
+  &__form-control-email,
+  &__form-control-cmc {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--color-primary-normal);
+    font-size: 16px;
+    font-weight: 700;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-weight: 400;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-primary-normal);
+      transition: color 0.2s;
+
+      @media screen and (min-width: $bp-tablet) {
+        font-weight: 400;
+      }
+    }
+
+    &:hover::placeholder {
+      color: var(--color-primary-dark);
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-dark);
+    }
+  }
+
+  &__form-control-email {
+    padding: 11px 24px 11px 56px;
+  }
+
+  &__form-control-cmc {
+    padding: 8px 24px;
+  }
+
+  &__button {
+    cursor: pointer;
+    display: block;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background-color: var(--color-primary-normal);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-primary-light);
+    border: none;
+    transition: background-color 0.2s;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-weight: 700;
+    }
+
+    &:hover {
+      background-color: var(--color-secondary-brand);
+    }
+  }
+}

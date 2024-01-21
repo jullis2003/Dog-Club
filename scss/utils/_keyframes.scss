@@ -1,0 +1,41 @@
+@keyframes translated {
+  0% {
+    transform: translateY(-20%);
+  }
+
+  50% {
+    transform: translateY(20%);
+  }
+
+  100% {
+    transform: translateY(-20%);
+  }
+}
+
+@keyframes translate-reserved {
+  0% {
+    transform: translateY(20%);
+  }
+
+  50% {
+    transform: translateY(-20%);
+  }
+
+  100% {
+    transform: translateY(20%);
+  }
+}
+
+@keyframes translate-learn-more-btn {
+  0% {
+    transform: translateY(10%);
+  }
+
+  50% {
+    transform: translateY(-10%);
+  }
+
+  100% {
+    transform: translateY(10%);
+  }
+}

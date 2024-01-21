@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicons/paw_icon_135323.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Dog Club</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <nav class="header__nav">
+            <div class="logo">
+              <a href="/">
+                <img
+                  src="./images/icons/logo.svg"
+                  alt="Dog Club logo"
+                  class="logo__image"
+                />
+              </a>
+            </div>
+            <ul class="header__menu">
+              <li>
+                <a href="/index.html#less-talk-section" class="link"
+                  >Less talk</a
+                >
+              </li>
+              <li>
+                <a href="/index.html#services-section" class="link"
+                  >Services category</a
+                >
+              </li>
+              <li>
+                <a href="/index.html#customer-section" class="link"
+                  >Happy customer</a
+                >
+              </li>
+              <li>
+                <a href="/index.html#contact-section" class="link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__buttons">
+            <button type="button" class="header__basket">
+              <svg width="24" height="24" class="header__basket-icon">
+                <use href="./images/icons/icons.svg#icon-basket"></use>
+              </svg>
+            </button>
+            <button
+              type="button"
+              class="button button--btn header__button modal-btn-open"
+            >
+              Contact us
+            </button>
+          </div>
+          <button type="button" class="header__menu-burger menu-btn-open">
+            <img src="./images/icons/burger-menu.svg" alt="Menu" />
+          </button>
+          <div class="mobile-menu">
+            <button type="button" class="mobile-menu__btn-close menu-btn-close">
+              <img src="./images/icons/mobile-menu-close.svg" alt="Close" />
+            </button>
+            <nav class="mobile-menu__nav">
+              <div class="logo">
+                <a href="/">
+                  <img
+                    src="./images/icons/logo.svg"
+                    alt="Dog Club logo"
+                    class="logo__image"
+                  />
+                </a>
+              </div>
+              <ul class="mobile-menu__menu">
+                <li class="mobile-menu__item">
+                  <a
+                    href="/index.html#less-talk-section"
+                    class="mobile-menu__link link menu-btn-close"
+                    >Less talk</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a
+                    href="/index.html#services-section"
+                    class="mobile-menu__link link menu-btn-close"
+                    >Services category</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a
+                    href="/index.html#customer-section"
+                    class="mobile-menu__link link menu-btn-close"
+                    >Happy customer</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a
+                    href="/index.html#contact-section"
+                    class="mobile-menu__link link menu-btn-close"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="mobile-menu__socials">
+              <a href="#" class="menu-btn-close">
+                <svg width="32" height="32" class="mobile-menu__social">
+                  <use href="./images/icons/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="#" class="menu-btn-close">
+                <svg width="32" height="32" class="mobile-menu__social">
+                  <use href="./images/icons/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="mobile-menu__background">
+              <img
+                src="./images/backgrounds/background-mobile-menu.png"
+                alt="Mobile menu background"
+                srcset="
+                  ./images/backgrounds/background-mobile-menu.png    1x,
+                  ./images/backgrounds/background-mobile-menu@2x.png 2x
+                "
+                class="mobile-menu__background-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="nutrition-page">
+      <div class="container">
+        <div class="nutrition-page__head">
+          <h2 class="nutrition-page__title">Nutrition</h2>
+          <div class="nutrition-page__sorting">
+            <div class="sorting-desktop">
+              <p class="sorting-desktop__heading">Sorting:</p>
+              <div class="sorting-desktop__buttons">
+                <button
+                  type="button"
+                  class="sorting-desktop__button sorting-desktop__button--active"
+                >
+                  Popularity
+                </button>
+                <button type="button" class="sorting-desktop__button">
+                  Cheaper first
+                </button>
+                <button type="button" class="sorting-desktop__button">
+                  More expensive first
+                </button>
+                <button type="button" class="sorting-desktop__button">
+                  By name
+                </button>
+                <button type="button" class="sorting-desktop__button">
+                  New ones first
+                </button>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="nutrition-page__sorting-mobile-open-button sorting-mobile-open"
+            >
+              <img
+                src="./images/icons/arrow-sorted.svg"
+                alt="Sorted"
+                class="nutrition-page__sorting-mobile-open-button-icon"
+              />
+              Popularity
+            </button>
+            <div class="sorting-mobile-backdrop is-hidden">
+              <div class="sorting-mobile is-close">
+                <h3 class="sorting-mobile__title">Sorting</h3>
+                <button
+                  class="sorting-mobile__category sorting-mobile-close"
+                  type="button"
+                >
+                  Popularity
+                  <svg
+                    width="14"
+                    height="14"
+                    class="sorting-mobile__category-arrow"
+                  >
+                    <use href="./images/icons/icons.svg#icon-arrow-go"></use>
+                  </svg>
+                </button>
+                <button
+                  class="sorting-mobile__category sorting-mobile-close"
+                  type="button"
+                >
+                  Cheaper first
+                  <svg
+                    width="14"
+                    height="14"
+                    class="sorting-mobile__category-arrow"
+                  >
+                    <use href="./images/icons/icons.svg#icon-arrow-go"></use>
+                  </svg>
+                </button>
+                <button
+                  class="sorting-mobile__category sorting-mobile-close"
+                  type="button"
+                >
+                  More expensive first
+                  <svg
+                    width="14"
+                    height="14"
+                    class="sorting-mobile__category-arrow"
+                  >
+                    <use href="./images/icons/icons.svg#icon-arrow-go"></use>
+                  </svg>
+                </button>
+                <button
+                  class="sorting-mobile__category sorting-mobile-close"
+                  type="button"
+                >
+                  By name
+                  <svg
+                    width="14"
+                    height="14"
+                    class="sorting-mobile__category-arrow"
+                  >
+                    <use href="./images/icons/icons.svg#icon-arrow-go"></use>
+                  </svg>
+                </button>
+                <button
+                  class="sorting-mobile__category sorting-mobile-close"
+                  type="button"
+                >
+                  New ones first
+                  <svg
+                    width="14"
+                    height="14"
+                    class="sorting-mobile__category-arrow"
+                  >
+                    <use href="./images/icons/icons.svg#icon-arrow-go"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="nutrition-page__list">
+          <li class="nutrition-page__item">
+            <article class="nutrition-card">
+              <img
+                src="./images/nutrition/nutrition-average-breeds.jpg"
+                alt="Nutrition for average breeds"
+                class="nutrition-card__image"
+                srcset="
+                  ./images/nutrition/nutrition-average-breeds.jpg    1x,
+                  ./images/nutrition/nutrition-average-breeds@2x.jpg 2x
+                "
+              />
+              <div class="nutrition-card__info">
+                <p class="nutrition-card__code">Vendor code: 37875</p>
+                <div class="nutrition-card__grade">
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="nutrition-card__description">
+                Dry food for dogs of average breeds Savory 3 kg (turkey and
+                lamb)
+              </p>
+              <div class="nutrition-card__price">
+                <p class="nutrition-card__new-price">136.00$</p>
+                <p class="nutrition-card__old-price">320.43$</p>
+              </div>
+              <button type="button" class="nutrition-card__button button">
+                Buy
+              </button>
+            </article>
+          </li>
+          <li class="nutrition-page__item">
+            <article class="nutrition-card">
+              <img
+                src="./images/nutrition/nutrition-small-breeds.jpg"
+                alt="Nutrition for small breeds"
+                class="nutrition-card__image"
+                srcset="
+                  ./images/nutrition/nutrition-small-breeds.jpg    1x,
+                  ./images/nutrition/nutrition-small-breeds@2x.jpg 2x
+                "
+              />
+              <div class="nutrition-card__info">
+                <p class="nutrition-card__code">Vendor code: 34905</p>
+                <div class="nutrition-card__grade">
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="nutrition-card__description">
+                Dry food for dogs of small breeds Savory 3 kg (lamb)
+              </p>
+              <div class="nutrition-card__price">
+                <p class="nutrition-card__new-price">140.00$</p>
+                <p class="nutrition-card__old-price">320.43$</p>
+              </div>
+              <button type="button" class="nutrition-card__button button">
+                Buy
+              </button>
+            </article>
+          </li>
+          <li class="nutrition-page__item">
+            <article class="nutrition-card">
+              <img
+                src="./images/nutrition/nutrition-all-breeds.jpg"
+                alt="Nutrition for all breeds"
+                class="nutrition-card__image"
+                srcset="
+                  ./images/nutrition/nutrition-all-breeds.jpg    1x,
+                  ./images/nutrition/nutrition-all-breeds@2x.jpg 2x
+                "
+              />
+              <div class="nutrition-card__info">
+                <p class="nutrition-card__code">Vendor code: 00027</p>
+                <div class="nutrition-card__grade">
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="nutrition-card__description">
+                Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)
+              </p>
+              <div class="nutrition-card__price">
+                <p class="nutrition-card__new-price">136.00$</p>
+                <p class="nutrition-card__old-price">320.43$</p>
+              </div>
+              <button type="button" class="nutrition-card__button button">
+                Buy
+              </button>
+            </article>
+          </li>
+          <li class="nutrition-page__item">
+            <article class="nutrition-card">
+              <img
+                src="./images/nutrition/nutrition-all-breeds.jpg"
+                alt="Nutrition for all breeds"
+                class="nutrition-card__image"
+                srcset="
+                  ./images/nutrition/nutrition-all-breeds.jpg    1x,
+                  ./images/nutrition/nutrition-all-breeds@2x.jpg 2x
+                "
+              />
+              <div class="nutrition-card__info">
+                <p class="nutrition-card__code">Vendor code: 00028</p>
+                <div class="nutrition-card__grade">
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="nutrition-card__description">
+                Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)
+              </p>
+              <div class="nutrition-card__price">
+                <p class="nutrition-card__new-price">346.00$</p>
+                <p class="nutrition-card__old-price">450.43$</p>
+              </div>
+              <button type="button" class="nutrition-card__button button">
+                Buy
+              </button>
+            </article>
+          </li>
+          <li class="nutrition-page__item">
+            <article class="nutrition-card">
+              <img
+                src="./images/nutrition/nutrition-small-breeds.jpg"
+                alt="Nutrition for small breeds"
+                class="nutrition-card__image"
+                srcset="
+                  ./images/nutrition/nutrition-small-breeds.jpg    1x,
+                  ./images/nutrition/nutrition-small-breeds@2x.jpg 2x
+                "
+              />
+              <div class="nutrition-card__info">
+                <p class="nutrition-card__code">Vendor code: 34905</p>
+                <div class="nutrition-card__grade">
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="nutrition-card__description">
+                Dry food for dogs of small breeds Savory 3 kg (lamb)
+              </p>
+              <div class="nutrition-card__price">
+                <p class="nutrition-card__new-price">140.00$</p>
+                <p class="nutrition-card__old-price">320.43$</p>
+              </div>
+              <button type="button" class="nutrition-card__button button">
+                Buy
+              </button>
+            </article>
+          </li>
+          <li class="nutrition-page__item">
+            <article class="nutrition-card">
+              <img
+                src="./images/nutrition/nutrition-all-breeds.jpg"
+                alt="Nutrition for all breeds"
+                class="nutrition-card__image"
+                srcset="
+                  ./images/nutrition/nutrition-all-breeds.jpg    1x,
+                  ./images/nutrition/nutrition-all-breeds@2x.jpg 2x
+                "
+              />
+              <div class="nutrition-card__info">
+                <p class="nutrition-card__code">Vendor code: 00027</p>
+                <div class="nutrition-card__grade">
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="nutrition-card__description">
+                Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)
+              </p>
+              <div class="nutrition-card__price">
+                <p class="nutrition-card__new-price">136.00$</p>
+                <p class="nutrition-card__old-price">320.43$</p>
+              </div>
+              <button type="button" class="nutrition-card__button button">
+                Buy
+              </button>
+            </article>
+          </li>
+          <li class="nutrition-page__item">
+            <article class="nutrition-card">
+              <img
+                src="./images/nutrition/nutrition-average-breeds.jpg"
+                alt="Nutrition for average breeds"
+                class="nutrition-card__image"
+                srcset="
+                  ./images/nutrition/nutrition-average-breeds.jpg    1x,
+                  ./images/nutrition/nutrition-average-breeds@2x.jpg 2x
+                "
+              />
+              <div class="nutrition-card__info">
+                <p class="nutrition-card__code">Vendor code: 37875</p>
+                <div class="nutrition-card__grade">
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="nutrition-card__description">
+                Dry food for dogs of average breeds Savory 3 kg (turkey and
+                lamb)
+              </p>
+              <div class="nutrition-card__price">
+                <p class="nutrition-card__new-price">136.00$</p>
+                <p class="nutrition-card__old-price">320.43$</p>
+              </div>
+              <button type="button" class="nutrition-card__button button">
+                Buy
+              </button>
+            </article>
+          </li>
+          <li class="nutrition-page__item">
+            <article class="nutrition-card">
+              <img
+                src="./images/nutrition/nutrition-all-breeds.jpg"
+                alt="Nutrition for all breeds"
+                class="nutrition-card__image"
+                srcset="
+                  ./images/nutrition/nutrition-all-breeds.jpg    1x,
+                  ./images/nutrition/nutrition-all-breeds@2x.jpg 2x
+                "
+              />
+              <div class="nutrition-card__info">
+                <p class="nutrition-card__code">Vendor code: 00028</p>
+                <div class="nutrition-card__grade">
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="nutrition-card__grade-star nutrition-card__grade-star--filled"
+                  >
+                    <use href="./images/icons/icons.svg#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="nutrition-card__description">
+                Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)
+              </p>
+              <div class="nutrition-card__price">
+                <p class="nutrition-card__new-price">346.00$</p>
+                <p class="nutrition-card__old-price">450.43$</p>
+              </div>
+              <button type="button" class="nutrition-card__button button">
+                Buy
+              </button>
+            </article>
+          </li>
+        </ul>
+        <div class="pages nutrition-page__pagination">
+          <div class="pages__arrow">
+            <a href="#">
+              <svg width="14" height="14">
+                <use href="./images/icons/icons.svg#icon-arrow-go"></use>
+              </svg>
+            </a>
+          </div>
+          <a href="#" class="pages__number-link pages__number-link--active">
+            <div class="pages__number-button">
+              <p class="pages__number">1</p>
+            </div>
+          </a>
+          <a href="#" class="pages__number-link">
+            <div class="pages__number-button">
+              <p class="pages__number">2</p>
+            </div>
+          </a>
+          <a href="#" class="pages__number-link">
+            <div class="pages__number-button">
+              <p class="pages__number">3</p>
+            </div>
+          </a>
+          <a href="#" class="pages__number-link">
+            <div class="pages__number-button">
+              <p class="pages__number">4</p>
+            </div>
+          </a>
+          <a href="#" class="pages__number-link">
+            <div class="pages__number-button">
+              <p class="pages__number">5</p>
+            </div>
+          </a>
+          <a href="#" class="pages__number-link">
+            <div class="pages__number-button">
+              <p class="pages__number">6</p>
+            </div>
+          </a>
+          <a href="#" class="pages__number-link">
+            <div class="pages__number-button">
+              <p class="pages__number">7</p>
+            </div>
+          </a>
+          <a href="#" class="pages__number-link">
+            <div class="pages__number-button">
+              <p class="pages__number">8</p>
+            </div>
+          </a>
+          <a href="#" class="pages__number-link">
+            <div class="pages__number-button">
+              <p class="pages__number">...</p>
+            </div>
+          </a>
+          <div class="pages__arrow">
+            <a href="#">
+              <svg width="14" height="14" class="pages__arrow-image--prev">
+                <use href="./images/icons/icons.svg#icon-arrow-go"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nutrition-page__background-paw-first background-paw">
+        <svg
+          width="97"
+          height="97"
+          class="nutrition-page__background-paw-first-image background-paw__image"
+        >
+          <use href="./images/icons/icons.svg#icon-hero-background-paw"></use>
+        </svg>
+      </div>
+      <div class="nutrition-page__background-paw-second background-paw">
+        <svg width="97" height="97" class="background-paw__image">
+          <use href="./images/icons/icons.svg#icon-hero-background-paw"></use>
+        </svg>
+      </div>
+      <div class="nutrition-page__background-paw-third background-paw">
+        <svg width="97" height="97" class="background-paw__image">
+          <use href="./images/icons/icons.svg#icon-hero-background-paw"></use>
+        </svg>
+      </div>
+      <div class="nutrition-page__background-paw-fourth background-paw">
+        <svg
+          width="24"
+          height="24"
+          class="nutrition-page__background-paw-fourth-image background-paw__image"
+        >
+          <use href="./images/icons/icons.svg#icon-hero-background-paw"></use>
+        </svg>
+      </div>
+      <div class="nutrition-page__background-paw-fifth background-paw">
+        <svg
+          width="56"
+          height="56"
+          class="nutrition-page__background-paw-fifth-image background-paw__image"
+        >
+          <use href="./images/icons/icons.svg#icon-hero-background-paw"></use>
+        </svg>
+      </div>
+      <div class="nutrition-page__background-paw-sixth background-paw">
+        <svg width="97" height="97" class="background-paw__image">
+          <use href="./images/icons/icons.svg#icon-hero-background-paw"></use>
+        </svg>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="container">
+          <div class="footer__content">
+            <nav class="footer__nav">
+              <div class="footer__links">
+                <div class="logo">
+                  <a href="/" class="logo__link">
+                    <img
+                      src="./images/icons/logo.svg"
+                      alt="Dog Club logo"
+                      class="logo__image"
+                    />
+                  </a>
+                </div>
+                <div class="footer__socials">
+                  <a href="#">
+                    <svg width="40" height="40" class="footer__social">
+                      <use href="./images/icons/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg width="40" height="40" class="footer__social">
+                      <use href="./images/icons/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <ul class="footer__menu">
+                <li class="footer__item">
+                  <a href="/index.html#less-talk-section" class="link"
+                    >Less talk</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="/index.html#services-section" class="link"
+                    >Services category</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="/index.html#customer-section" class="link"
+                    >Happy customer</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="/index.html#contact-section" class="link">Contact</a>
+                </li>
+              </ul>
+              <div class="footer__mobile-socials">
+                <a href="#">
+                  <svg width="32" height="32" class="footer__social">
+                    <use href="./images/icons/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg width="32" height="32" class="footer__social">
+                    <use href="./images/icons/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </div>
+            </nav>
+            <div>
+              <form autocomplete="off" name="contact-form" class="footer__form">
+                <div class="footer__form-field input">
+                  <label for="user-email" class="footer__form-label">
+                    <svg width="24" height="24" class="input__label-image">
+                      <use href="./images/icons/icons.svg#icon-email"></use>
+                    </svg>
+                  </label>
+                  <input
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    class="footer__form-control-email"
+                    placeholder="Your email"
+                    required
+                  />
+                </div>
+                <div class="footer__form-field input">
+                  <label
+                    for="user-cmc"
+                    class="footer__form-label visually-hidden"
+                    >Your cmc</label
+                  >
+                  <input
+                    type="text"
+                    name="user-cmc"
+                    id="user-cmc"
+                    class="footer__form-control-cmc"
+                    placeholder="Your cmc"
+                    required
+                  />
+                </div>
+                <button type="submit" class="footer__button">Contact us</button>
+                <div class="form-agreed">
+                  <input
+                    type="checkbox"
+                    name="privacy-policy"
+                    id="footer-privacy-policy"
+                    class="form-agreed__checkbox visually-hidden"
+                  />
+                  <label for="footer-privacy-policy" class="form-agreed__label"
+                    >I agree to the privacy policy</label
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button type="button" class="modal__btn-close modal-btn-close">
+          <img src="./images/icons/modal-close.svg" alt="Close" />
+        </button>
+        <div class="modal__container">
+          <h2 class="modal__title">
+            Our experts will take care of your friend
+          </h2>
+          <p class="modal__text">Fill out the form so we can contact you!</p>
+          <form autocomplete="off" name="contact-form">
+            <div class="modal__form-field input">
+              <label for="user-name" class="input__label">
+                <svg width="32" height="32" class="input__label-image">
+                  <use href="./images/icons/icons.svg#icon-name"></use>
+                </svg>
+              </label>
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="input__control"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="modal__form-field input">
+              <label for="pet-name" class="input__label">
+                <svg width="32" height="32" class="input__label-image">
+                  <use href="./images/icons/icons.svg#icon-pet"></use>
+                </svg>
+              </label>
+              <input
+                type="text"
+                name="pet-name"
+                id="pet-name"
+                class="input__control"
+                placeholder="Pet name"
+                required
+              />
+            </div>
+            <div class="modal__form-field input">
+              <label for="user-phone" class="input__label">
+                <svg width="32" height="32" class="input__label-image">
+                  <use href="./images/icons/icons.svg#icon-phone"></use>
+                </svg>
+              </label>
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                class="input__control"
+                placeholder="Your phone"
+                required
+              />
+            </div>
+            <div class="modal__form-field input">
+              <label for="user-email" class="input__label">
+                <svg width="32" height="32" class="input__label-image">
+                  <use href="./images/icons/icons.svg#icon-email"></use>
+                </svg>
+              </label>
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="input__control"
+                placeholder="Your email"
+                required
+              />
+            </div>
+            <button type="submit" class="button modal__button">
+              Contact us
+            </button>
+            <div class="form-agreed">
+              <input
+                type="checkbox"
+                name="privacy-policy"
+                id="modal-privacy-policy"
+                class="form-agreed__checkbox visually-hidden"
+              />
+              <label for="modal-privacy-policy" class="form-agreed__label"
+                >I agree to the privacy policy</label
+              >
+            </div>
+          </form>
+        </div>
+        <div class="modal__background-paw-first background-paw">
+          <svg
+            width="97"
+            height="97"
+            class="modal__background-paw-first-image background-paw__image-modal"
+          >
+            <use href="./images/icons/icons.svg#icon-hero-background-paw"></use>
+          </svg>
+        </div>
+        <div class="modal__background-paw-second background-paw">
+          <svg
+            width="97"
+            height="97"
+            class="modal__background-paw-second-image background-paw__image-modal"
+          >
+            <use href="./images/icons/icons.svg#icon-hero-background-paw"></use>
+          </svg>
+        </div>
+        <div class="modal__background-paw-third background-paw">
+          <svg
+            width="97"
+            height="97"
+            class="modal__background-paw-third-image background-paw__image-modal"
+          >
+            <use href="./images/icons/icons.svg#icon-hero-background-paw"></use>
+          </svg>
+        </div>
+        <div class="modal__background-paw-fourth background-paw">
+          <svg
+            width="97"
+            height="97"
+            class="modal__background-paw-fourth-image background-paw__image-modal"
+          >
+            <use href="./images/icons/icons.svg#icon-hero-background-paw"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/sorting-mobile.js"></script>
+  </body>
+</html>

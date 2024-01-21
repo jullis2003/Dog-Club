@@ -1,0 +1,202 @@
+.dogs-image {
+  z-index: -1;
+  position: relative;
+
+  &__brown-dog,
+  &__little-dog,
+  &__white-dog,
+  &__violet-paw,
+  &__pink-paw,
+  &__yellow-paw {
+    z-index: -1;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+  }
+
+  &__little-dog,
+  &__white-dog,
+  &__violet-paw,
+  &__pink-paw,
+  &__yellow-paw {
+    position: absolute;
+  }
+
+  &__brown-dog,
+  &__little-dog,
+  &__white-dog {
+    width: 24px;
+    height: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &__little-dog,
+  &__white-dog {
+    animation-name: translated;
+  }
+
+  &__brown-dog {
+    animation-name: translate-reserved;
+
+    @media screen and (min-width: $bp-desktop) {
+      position: absolute;
+      top: -5px;
+      left: 56px;
+    }
+  }
+
+  &__little-dog {
+    bottom: 40px;
+    right: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      right: 0;
+      top: 88px;
+    }
+  }
+
+  &__white-dog {
+    left: 0;
+    bottom: 40px;
+
+    @media screen and (min-width: $bp-desktop) {
+      left: -100px;
+      top: 260px;
+    }
+  }
+
+  &__violet-paw,
+  &__pink-paw,
+  &__yellow-paw {
+    @media screen and (min-width: $bp-desktop) {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  &__violet-paw {
+    fill: var(--color-secondary-normal);
+    transform: rotate(120deg);
+    top: -130px;
+    right: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      left: 0;
+      top: 80px;
+    }
+  }
+
+  &__yellow-paw {
+    fill: var(--color-secondary-brand);
+    bottom: 20px;
+    left: 80px;
+
+    @media screen and (min-width: $bp-desktop) {
+      left: -60px;
+      bottom: 87px;
+    }
+  }
+
+  &__pink-paw {
+    fill: var(--color-extra-light);
+    transform: rotate(170deg);
+    bottom: 10px;
+    right: 80px;
+
+    @media screen and (min-width: $bp-desktop) {
+      right: -55px;
+      top: 222px;
+    }
+  }
+
+  &__black-dog {
+    width: 506px;
+    height: 516px;
+    max-width: none;
+  }
+}
+
+.dog-image {
+  position: relative;
+
+  &__dog,
+  &__learn-more-btn,
+  &__paw-first,
+  &__paw-second,
+  &__paw-third,
+  &__food {
+    position: absolute;
+  }
+
+  &__background,
+  &__dog,
+  &__paw-first,
+  &__paw-second,
+  &__paw-third,
+  &__food {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__learn-more-btn,
+  &__food {
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+  }
+
+  &__dog {
+    top: 90px;
+    left: 0;
+  }
+
+  &__learn-more-btn {
+    animation-name: translate-learn-more-btn;
+    right: 15px;
+    top: -60px;
+
+    @media screen and (min-width: $bp-desktop) {
+      top: 40px;
+      right: 30px;
+    }
+  }
+
+  &__paw-first,
+  &__paw-second,
+  &__paw-third {
+    fill: var(--color-secondary-dark);
+  }
+
+  &__paw-first {
+    bottom: 180px;
+    left: 60px;
+    transform: rotate(75deg);
+  }
+
+  &__paw-second {
+    top: 60px;
+    left: 160px;
+    transform: rotate(120deg);
+  }
+
+  &__paw-third {
+    bottom: 240px;
+    right: 50px;
+    transform: rotate(170deg);
+  }
+
+  &__food {
+    width: 72px;
+    height: 48px;
+    bottom: -10px;
+    left: 220px;
+    animation-name: translated;
+  }
+}

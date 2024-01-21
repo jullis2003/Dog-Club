@@ -1,0 +1,21 @@
+.background-paw {
+  position: absolute;
+  z-index: -1;
+
+  &__image,
+  &__image-modal {
+    filter: blur(0.5px);
+
+    @media screen and (min-width: $bp-desktop) {
+      filter: blur(4px);
+    }
+  }
+
+  &__image {
+    fill: var(--color-secondary-light);
+  }
+
+  &__image-modal {
+    fill: var(--color-primary-light);
+  }
+}

@@ -1,0 +1,30 @@
+.button {
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background-color: var(--color-primary-normal);
+  font-weight: 500;
+  color: var(--color-primary-light);
+  border: none;
+  transition: background-color 0.2s;
+  font-size: 16px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    background-color: var(--color-secondary-brand);
+  }
+
+  &--link {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  &--btn {
+    display: block;
+  }
+}

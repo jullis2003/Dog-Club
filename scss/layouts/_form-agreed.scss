@@ -1,0 +1,40 @@
+.form-agreed {
+  position: relative;
+  margin: 8px auto 0;
+  width: max-content;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-top: 16px;
+  }
+
+  &__checkbox {
+    appearance: none;
+  }
+
+  &__label {
+    color: var(--color-secondary-dark);
+    font-size: 12px;
+    font-weight: 300;
+    user-select: none;
+    padding-left: 24px;
+
+    &::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      border-radius: 2px;
+      border: 1px solid var(--color-secondary-dark);
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 3px;
+    }
+  }
+
+  &__checkbox:checked + &__label::before {
+    background-image: url('/images/index/checkbox-active.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+  }
+}

@@ -1,0 +1,40 @@
+@import './utils/fonts';
+@import './utils/variables';
+
+@import './base';
+
+@import './utils/keyframes';
+@import './utils/texts';
+@import './utils/utils';
+
+@import './components/buttons';
+@import './components/carousel-button';
+@import './components/customer-card';
+@import './components/images';
+@import './components/input';
+@import './components/links';
+@import './components/logos';
+@import './components/nutrition-card';
+@import './components/pagination';
+@import './components/service-card';
+@import './components/slider-pagination';
+@import './components/sorting-desktop';
+@import './components/sorting-mobile';
+
+@import './layouts/container';
+@import './layouts/footer';
+@import './layouts/form-agreed';
+@import './layouts/header';
+@import './layouts/mobile-menu';
+@import './layouts/modal';
+@import './layouts/section';
+
+@import './layouts/index/background-paws';
+@import './layouts/index/contact-section';
+@import './layouts/index/customer-section';
+@import './layouts/index/hero-section';
+@import './layouts/index/learn-more-btn';
+@import './layouts/index/less-talk-section';
+@import './layouts/index/services-section';
+
+@import './layouts/nutrition/nutrition-page';

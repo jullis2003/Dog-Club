@@ -1,0 +1,105 @@
+.customer-section {
+  padding-top: 70px;
+  padding-bottom: 36px;
+  position: relative;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 112px;
+    padding-bottom: 0;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 0 24px;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+    }
+  }
+
+  &__container {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  &__list {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__background-paw-first {
+    bottom: 10px;
+    right: 70px;
+
+    @media screen and (min-width: $bp-desktop) {
+      top: 50px;
+      left: 90px;
+    }
+  }
+
+  &__background-paw-first-image {
+    @media screen and (min-width: $bp-desktop) {
+      width: 72px;
+      height: 72px;
+    }
+  }
+
+  &__background-paw-second {
+    bottom: 0;
+    left: -15px;
+
+    @media screen and (min-width: $bp-desktop) {
+      top: 80px;
+      right: 20px;
+    }
+  }
+
+  &__background-paw-second-image {
+    transform: rotate(-67.986deg);
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 97px;
+      height: 97px;
+    }
+  }
+
+  &__background-paw-third {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      bottom: 30px;
+      left: -110px;
+    }
+  }
+
+  &__background-paw-third-image {
+    transform: rotate(-67.986deg);
+  }
+}
