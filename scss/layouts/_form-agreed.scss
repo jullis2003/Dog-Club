@@ -32,7 +32,7 @@
   }
 
   &__checkbox:checked + &__label::before {
-    background-image: url('../../images/index/checkbox-active.png');
+    background-image: url('../images/index/checkbox-active.png');
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
