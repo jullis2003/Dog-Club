@@ -43,7 +43,7 @@
     background-color: transparent;
     border: none;
     padding: 0;
-    color: inherit;
+    color: var(--color-primary-dark);
 
     @media screen and (min-width: $bp-desktop) {
       display: none;
