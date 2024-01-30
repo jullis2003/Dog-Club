@@ -9,9 +9,12 @@
   &__pink-paw,
   &__yellow-paw {
     z-index: -1;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
+
+    @media screen and (min-width: $bp-desktop) {
+      animation-iteration-count: infinite;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+    }
   }
 
   &__little-dog,
@@ -36,13 +39,14 @@
 
   &__little-dog,
   &__white-dog {
-    animation-name: translated;
+    @media screen and (min-width: $bp-desktop) {
+      animation-name: translated;
+    }
   }
 
   &__brown-dog {
-    animation-name: translate-reserved;
-
     @media screen and (min-width: $bp-desktop) {
+      animation-name: translate-reserved;
       position: absolute;
       top: -5px;
       left: 56px;
