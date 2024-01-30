@@ -2,14 +2,14 @@
   position: relative;
 
   &__label {
+    height: 24px;
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 9px;
+    margin-top: 8px;
     margin-left: 24px;
 
     @media screen and (min-width: $bp-tablet) {
-      margin-top: 8px;
       margin-left: 40px;
     }
   }
