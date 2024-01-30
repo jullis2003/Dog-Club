@@ -108,8 +108,14 @@
 
   &__form-label {
     position: absolute;
-    top: 5px;
-    left: 24px;
+    top: 0;
+    left: 0;
+    margin-top: 8px;
+    margin-left: 24px;
+  }
+
+  &__form-label-image {
+    fill: var(--color-primary-normal);
   }
 
   &__form-control-email,
