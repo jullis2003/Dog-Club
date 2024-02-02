@@ -34,14 +34,14 @@ function validation(form) {
       }
     }
 
-    // if (input.dataset.pattern) {
-    //   if (input.value == '') {
-    //     removeError(input);
-    //     createError(input, "The field isn't filled!");
+    if (input.dataset.pattern) {
+      if (input.value !== '^+[0-9]{12}') {
+        removeError(input);
+        createError(input, 'Phone format: +************');
 
-    //     result = false;
-    //   }
-    // }
+        result = false;
+      }
+    }
   });
 
   return result;
