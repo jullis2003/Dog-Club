@@ -62,4 +62,16 @@
       color: var(--color-primary-dark);
     }
   }
+
+  .error &__control {
+    border-color: var(--color-secondary-dark);
+  }
+
+  .error-text {
+    color: var(--color-primary-normal);
+    margin-bottom: 0;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+  }
 }

@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 html {
   @media screen and (min-width: $bp-desktop) {
     scroll-behavior: smooth;
