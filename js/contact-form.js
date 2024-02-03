@@ -1,5 +1,6 @@
 function validation(form) {
   let result = true;
+  const regularPhone = /^\+\d{12}$/;
 
   function createError(input, text) {
     const parent = input.parentNode;
@@ -16,10 +17,14 @@ function validation(form) {
     const parent = input.parentNode;
 
     if (parent.classList.contains('error')) {
-      parent.querySelector('error-text').remove();
+      parent.querySelector('.error-text').remove();
 
       parent.classList.remove('error');
     }
+  }
+
+  function validatePhone(regular, input) {
+    return regular.test(input);
   }
 
   form.querySelectorAll('.input-control').forEach(input => {
@@ -35,7 +40,7 @@ function validation(form) {
     }
 
     if (input.dataset.pattern) {
-      if (input.value !== '^+[0-9]{12}') {
+      if (!validatePhone(regularPhone, input.value)) {
         removeError(input);
         createError(input, 'Phone format: +************');
 
