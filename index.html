@@ -778,12 +778,7 @@
               <p class="contact-section__text">
                 Fill out the form so we can contact you!
               </p>
-              <form
-                action=""
-                autocomplete="off"
-                name="contact-form"
-                id="contact-form"
-              >
+              <form autocomplete="off" name="contact-form" id="contact-form">
                 <div class="contact-section__form-field input">
                   <label for="user-name" class="input__label">
                     <svg width="24" height="24" class="input__label-image">
@@ -856,13 +851,14 @@
                     type="checkbox"
                     name="privacy-policy"
                     id="contact-privacy-policy"
-                    class="form-agreed__checkbox visually-hidden"
-                    required
+                    class="form-agreed__checkbox visually-hidden form-checkbox"
+                    data-required="true"
                   />
                   <label for="contact-privacy-policy" class="form-agreed__label"
                     >I agree to the privacy policy</label
                   >
                 </div>
+                <p class="submit-text"></p>
               </form>
             </div>
           </div>
@@ -978,9 +974,9 @@
                       type="email"
                       name="user-email"
                       id="user-email"
-                      class="footer__form-control-email"
+                      class="footer__form-control-email input-control"
                       placeholder="Your email"
-                      required
+                      data-required="true"
                     />
                   </div>
                   <div class="footer__form-field input">
@@ -993,9 +989,9 @@
                       type="text"
                       name="user-cmc"
                       id="user-cmc"
-                      class="footer__form-control-cmc"
+                      class="footer__form-control-cmc input-control"
                       placeholder="Your cmc"
-                      required
+                      data-required="true"
                     />
                   </div>
                   <button type="submit" class="footer__button">
@@ -1007,7 +1003,7 @@
                       name="privacy-policy"
                       id="footer-privacy-policy"
                       class="form-agreed__checkbox visually-hidden"
-                      required
+                      data-required="true"
                     />
                     <label
                       for="footer-privacy-policy"
@@ -1015,6 +1011,7 @@
                       >I agree to the privacy policy</label
                     >
                   </div>
+                  <p class="submit-text"></p>
                 </form>
               </div>
             </div>

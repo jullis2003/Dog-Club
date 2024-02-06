@@ -1,6 +1,10 @@
+const contactForm = document.getElementById('contact-form');
+
 function validation(form) {
   let result = true;
   const regularPhone = /^\+\d{12}$/;
+  const formAgreed = document.querySelector('.form-agreed');
+  const formCheckbox = formAgreed.querySelector('.form-checkbox');
 
   function createError(input, text) {
     const parent = input.parentNode;
@@ -49,15 +53,27 @@ function validation(form) {
     }
   });
 
+  if (formCheckbox.dataset.required == 'true') {
+    if (!formCheckbox.checked) {
+      formAgreed.style.border = '1px solid var(--color-secondary-dark)';
+    } else {
+      formAgreed.style.border = 'none';
+    }
+  }
+
   return result;
 }
 
-document
-  .getElementById('contact-form')
-  .addEventListener('submit', function (event) {
-    event.preventDefault();
+contactForm.addEventListener('submit', function (event) {
+  event.preventDefault();
 
-    if (validation(this) == true) {
-      alert('The form has been tested successfully!');
-    }
-  });
+  const submitData = document.querySelector('.submit-text');
+
+  if (validation(this) == true) {
+    submitData.textContent = 'The form has been tested successfully!';
+
+    contactForm.reset();
+  } else {
+    submitData.textContent = '';
+  }
+});
