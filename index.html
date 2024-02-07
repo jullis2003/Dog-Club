@@ -778,7 +778,7 @@
               <p class="contact-section__text">
                 Fill out the form so we can contact you!
               </p>
-              <form autocomplete="off" name="contact-form" id="contact-form">
+              <form autocomplete="off" name="contact-form" class="contact-form">
                 <div class="contact-section__form-field input">
                   <label for="user-name" class="input__label">
                     <svg width="24" height="24" class="input__label-image">
@@ -958,7 +958,7 @@
                 <form
                   autocomplete="off"
                   name="contact-form"
-                  class="footer__form"
+                  class="contact-form"
                 >
                   <div class="footer__form-field input">
                     <label for="user-email" class="footer__form-label">
@@ -1002,7 +1002,7 @@
                       type="checkbox"
                       name="privacy-policy"
                       id="footer-privacy-policy"
-                      class="form-agreed__checkbox visually-hidden"
+                      class="form-agreed__checkbox visually-hidden form-checkbox"
                       data-required="true"
                     />
                     <label
@@ -1028,7 +1028,7 @@
               Our experts will take care of your friend
             </h2>
             <p class="modal__text">Fill out the form so we can contact you!</p>
-            <form autocomplete="off" name="contact-form">
+            <form autocomplete="off" name="contact-form" class="contact-form">
               <div class="modal__form-field input">
                 <label for="user-name" class="input__label">
                   <svg width="32" height="32" class="input__label-image">
@@ -1039,9 +1039,9 @@
                   type="text"
                   name="user-name"
                   id="user-name"
-                  class="input__control"
+                  class="input__control input-control"
                   placeholder="Your name"
-                  required
+                  data-required="true"
                 />
               </div>
               <div class="modal__form-field input">
@@ -1054,9 +1054,9 @@
                   type="text"
                   name="pet-name"
                   id="pet-name"
-                  class="input__control"
+                  class="input__control input-control"
                   placeholder="Pet name"
-                  required
+                  data-required="true"
                 />
               </div>
               <div class="modal__form-field input">
@@ -1069,9 +1069,10 @@
                   type="tel"
                   name="user-phone"
                   id="user-phone"
-                  class="input__control"
+                  class="input__control input-control"
                   placeholder="Your phone"
-                  required
+                  data-required="true"
+                  data-pattern="^\+\d{12}$"
                 />
               </div>
               <div class="modal__form-field input">
@@ -1084,9 +1085,9 @@
                   type="email"
                   name="user-email"
                   id="user-email"
-                  class="input__control"
+                  class="input__control input-control"
                   placeholder="Your email"
-                  required
+                  data-required="true"
                 />
               </div>
               <button type="submit" class="button modal__button">
@@ -1097,13 +1098,14 @@
                   type="checkbox"
                   name="privacy-policy"
                   id="modal-privacy-policy"
-                  class="form-agreed__checkbox visually-hidden"
-                  required
+                  class="form-agreed__checkbox visually-hidden form-checkbox"
+                  data-required="true"
                 />
                 <label for="modal-privacy-policy" class="form-agreed__label"
                   >I agree to the privacy policy</label
                 >
               </div>
+              <p class="submit-text"></p>
             </form>
           </div>
           <div class="modal__background-paw-first background-paw">
