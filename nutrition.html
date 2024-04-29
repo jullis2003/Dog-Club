@@ -923,10 +923,14 @@
               </div>
             </nav>
             <div>
-              <form autocomplete="off" name="contact-form" class="footer__form">
+              <form autocomplete="off" name="contact-form" class="contact-form">
                 <div class="footer__form-field input">
                   <label for="user-email" class="footer__form-label">
-                    <svg width="24" height="24" class="input__label-image">
+                    <svg
+                      width="24"
+                      height="24"
+                      class="footer__form-label-image"
+                    >
                       <use href="./images/icons/icons.svg#icon-email"></use>
                     </svg>
                   </label>
@@ -934,9 +938,9 @@
                     type="email"
                     name="user-email"
                     id="user-email"
-                    class="footer__form-control-email"
+                    class="footer__form-control-email input-control"
                     placeholder="Your email"
-                    required
+                    data-required="true"
                   />
                 </div>
                 <div class="footer__form-field input">
@@ -949,9 +953,9 @@
                     type="text"
                     name="user-cmc"
                     id="user-cmc"
-                    class="footer__form-control-cmc"
+                    class="footer__form-control-cmc input-control"
                     placeholder="Your cmc"
-                    required
+                    data-required="true"
                   />
                 </div>
                 <button type="submit" class="footer__button">Contact us</button>
@@ -960,12 +964,14 @@
                     type="checkbox"
                     name="privacy-policy"
                     id="footer-privacy-policy"
-                    class="form-agreed__checkbox visually-hidden"
+                    class="form-agreed__checkbox visually-hidden form-checkbox"
+                    data-required="true"
                   />
                   <label for="footer-privacy-policy" class="form-agreed__label"
                     >I agree to the privacy policy</label
                   >
                 </div>
+                <p class="submit-text"></p>
               </form>
             </div>
           </div>
@@ -982,7 +988,7 @@
             Our experts will take care of your friend
           </h2>
           <p class="modal__text">Fill out the form so we can contact you!</p>
-          <form autocomplete="off" name="contact-form">
+          <form autocomplete="off" name="contact-form" class="contact-form">
             <div class="modal__form-field input">
               <label for="user-name" class="input__label">
                 <svg width="32" height="32" class="input__label-image">
@@ -993,9 +999,9 @@
                 type="text"
                 name="user-name"
                 id="user-name"
-                class="input__control"
+                class="input__control input-control"
                 placeholder="Your name"
-                required
+                data-required="true"
               />
             </div>
             <div class="modal__form-field input">
@@ -1008,9 +1014,9 @@
                 type="text"
                 name="pet-name"
                 id="pet-name"
-                class="input__control"
+                class="input__control input-control"
                 placeholder="Pet name"
-                required
+                data-required="true"
               />
             </div>
             <div class="modal__form-field input">
@@ -1023,9 +1029,10 @@
                 type="tel"
                 name="user-phone"
                 id="user-phone"
-                class="input__control"
+                class="input__control input-control"
                 placeholder="Your phone"
-                required
+                data-required="true"
+                data-pattern="^\+\d{12}$"
               />
             </div>
             <div class="modal__form-field input">
@@ -1038,9 +1045,9 @@
                 type="email"
                 name="user-email"
                 id="user-email"
-                class="input__control"
+                class="input__control input-control"
                 placeholder="Your email"
-                required
+                data-required="true"
               />
             </div>
             <button type="submit" class="button modal__button">
@@ -1051,12 +1058,14 @@
                 type="checkbox"
                 name="privacy-policy"
                 id="modal-privacy-policy"
-                class="form-agreed__checkbox visually-hidden"
+                class="form-agreed__checkbox visually-hidden form-checkbox"
+                data-required="true"
               />
               <label for="modal-privacy-policy" class="form-agreed__label"
                 >I agree to the privacy policy</label
               >
             </div>
+            <p class="submit-text"></p>
           </form>
         </div>
         <div class="modal__background-paw-first background-paw">
@@ -1098,6 +1107,7 @@
       </div>
     </div>
 
+    <script src="./js/contact-form.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
