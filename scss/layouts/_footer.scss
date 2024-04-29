@@ -21,14 +21,14 @@
       background-image: url('../images/index/footer-dog.png');
       background-size: cover;
       position: absolute;
-      top: -120px;
+      top: -123px;
       right: 35%;
 
       @media screen and (min-width: $bp-desktop) {
         width: 292px;
         height: 305px;
         bottom: 0;
-        top: auto;
+        top: -4px;
         right: 80px;
       }
     }
